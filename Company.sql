@@ -94,3 +94,29 @@ Alter table Employee add DNUM int foreign key references Department(DNUM)
 insert into Employee(Fname ,Lname,Gender,DOB ) values('Ali','AlAjmi',0,'11-3-1998'),
 ('Mohammed','AlBadi',0,'4-5-1995'),
 ('Ahmed','AlAmri',0,'11-3-1996')
+
+insert into Department(Dname,HiringDate) values('IT','11-3-2013'),
+('HR','4-5-2022'),
+('BA','11-3-2023')
+
+
+insert into Department_Location(DNUM,Dlocation) values('100','GroundFloor')
+,('200','2ndFloor'),
+('300','GroundFloor')
+
+
+insert into Project ( Pname,Loc,DNUM) values ('Automation','Bahwan',300),
+('Hiring','PDO',200),
+('Build Software','Bahwan',100)
+
+
+
+insert into Employee_Project(PNumber, SSN ,Hrs) values('Automation',3,90),
+('Hiring',2,144),
+('Hiring',1,720)
+
+
+insert into Employee_DEPN(SSN, Dname, Gunder,DOB ) values(3,'Ahmed',0,'11-3-1996'),
+(1,'Ali',0,'11-3-1998'),
+(3,'Mohammed',0,'4-5-1995')
+
