@@ -57,7 +57,7 @@ SELECT FullName, Email FROM Trainees
 INTERSECT
 SELECT FullName, Email FROM Applicants;
 
--- Simulated using JOIN (universal method):
+-- Simulated using JOIN:
 SELECT t.FullName, t.Email
 FROM Trainees t
 INNER JOIN Applicants a ON t.Email = a.Email;
